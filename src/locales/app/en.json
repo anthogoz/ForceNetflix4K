@@ -1,0 +1,13 @@
+{
+  "title": "Force Netflix 4K",
+  "subtitle": "Ultra HD Display Spoofing",
+  "statusActive": "4K Spoofing Active",
+  "statusDisabled": "4K Spoofing Disabled",
+  "activeDesc": "Netflix will detect a 3840x2160 (4K) display with DPR 2.",
+  "disabledDesc": "Netflix will detect your default system screen parameters.",
+  "toggleLabel": "Enable 4K Spoofing",
+  "refreshNotice": "Reload Netflix active tab to apply changes.",
+  "refreshButton": "Reload Tab",
+  "activeTabNetflix": "Netflix tab detected",
+  "activeTabOther": "Open Netflix to test spoofing"
+}

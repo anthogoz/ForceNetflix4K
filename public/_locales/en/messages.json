@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Force Netflix 4K",
+    "description": "The extension name"
+  },
+  "extDescription": {
+    "message": "Spoofs screen parameters on Netflix to trick the platform into detecting a 4K Ultra HD display.",
+    "description": "The extension description"
+  }
+}
