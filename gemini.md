@@ -25,7 +25,7 @@ To stream Netflix in 4K Ultra HD, your environment must satisfy **all** of the f
 | Requirement | Description | Bypassed by ForceNetflix4K? |
 | :--- | :--- | :---: |
 | 💳 **Netflix Premium Plan** | An active subscription tier supporting Ultra HD (4K). | ❌ **No** *(Account level)* |
-| 💻 **Hardware / GPU Decoding** | GPU hardware acceleration supporting HEVC (H.265) / AV1 decoding. | ❌ **No** *(Hardware level)* |
+| 💻 **Hardware / GPU & HEVC Codec** | GPU acceleration supporting HEVC (H.265). *(On Windows, Microsoft's **HEVC Video Extensions** app (€0.99 on the Microsoft Store) is required if not pre-installed by your OEM).* | ❌ **No** *(Hardware / OS level)* |
 | 🔐 **HDCP 2.2 Display Chain** | Graphics card, monitor, and cables must all support HDCP 2.2. | ❌ **No** *(DRM / OS level)* |
 | 🖥️ **4K Screen / Viewport (3840×2160)** | Screen resolution reported to the browser must be 4K UHD or scaled high DPI. | ✅ **YES** *(Spoofed by Extension)* |
 | 🌐 **Supported Browser & User-Agent** | Edge/Safari or Windows PlayReady browser detection for 4K profiles. | ✅ **YES** *(Spoofed by Extension)* |
