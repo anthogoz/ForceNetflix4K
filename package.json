@@ -1,7 +1,7 @@
 {
   "name": "force-netflix-4k",
   "description": "Browser extension for Chrome and Firefox that spoofs screen parameters on Netflix to trick the site into detecting a 4K display.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Lnkhey",
   "license": "MIT",
   "private": true,
