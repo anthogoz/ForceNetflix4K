@@ -3,15 +3,18 @@
 [![WXT Framework](https://img.shields.io/badge/Framework-WXT-6366f1.style=flat-square)](https://wxt.dev)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg?style=flat-square)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![GitHub Actions Release](https://img.shields.io/badge/Release-GitHub%20Actions-green?style=flat-square&logo=githubactions)](https://github.com/)
 
-**ForceNetflix4K** is a lightweight browser extension for Chromium and Firefox that spoofs browser resolution, User-Agent, and media capability reporting to unlock 4K Ultra HD streaming profiles on Netflix.
+**ForceNetflix4K** is an open-source browser extension for Chromium and Firefox that spoofs browser resolution, User-Agent, and media capability reporting to unlock 4K Ultra HD streaming profiles on Netflix.
 
 ---
 
 > [!IMPORTANT]  
 > **What This Extension Does (and Does NOT) Do**  
 > Spoofing browser metrics is **ONLY ONE** of several strict prerequisites Netflix enforces to deliver 4K streams. This extension bypasses browser-side screen dimension and capability checks, but **it cannot bypass hardware or DRM requirements** (such as HEVC GPU decoding or HDCP 2.2 protection).
+
+> [!WARNING]  
+> **Possible UI Layout Glitches**  
+> Because the extension forces the browser to report a 4K UHD screen (3840×2160) and a fixed device pixel ratio, Netflix's web interface (navigation bars, video carousels, and thumbnail cards) may appear slightly scaled or display minor visual layout glitches on smaller displays. Video playback in fullscreen or inline player operates normally.
 
 ---
 
@@ -62,29 +65,16 @@ A common reason users fail to get 4K—even when using this extension—is **HDC
 
 ---
 
-## 🚀 Release Process (Automated via GitHub Actions)
+## 🤝 Contributing
 
-Releases in this repository are **fully automated**. Do **not** manually create git tags, run local release zip scripts, or draft GitHub releases on your machine.
+ForceNetflix4K is **open-source** under the MIT License, and contributions from the community are warmly welcome!
 
-All releases are handled by the **[Manual Release GitHub Action workflow](.github/workflows/release.yml)**.
-
-### How to Trigger a Release:
-
-1. Navigate to the **Actions** tab in the GitHub repository.
-2. Under **Workflows**, select **Manual Release**.
-3. Click **Run workflow**.
-4. Fill in the required inputs:
-   * **Version number**: Provide the semantic version (e.g., `1.0.1` or `1.1.0`).
-   * **Optional release notes**: Add custom release notes (if left blank, GitHub will auto-generate them).
-5. Click **Run workflow**.
-
-### What the Release Action Does Automatically:
-* 🔍 Validates that the requested version is valid and strictly greater than the current `package.json` version.
-* 📦 Bumps the version in `package.json` and `package-lock.json`.
-* 🧪 Runs linting (`biome lint`) and typechecks (`vue-tsc`).
-* 🗜️ Builds zipped web extension artifacts for both **Chromium** and **Firefox** using WXT (`npm run zip` and `npm run zip:firefox`).
-* 🏷️ Commits the version bump, creates the Git tag (`vX.Y.Z`), and pushes them to GitHub.
-* 🎁 Publishes an official **GitHub Release** with the compiled Chrome and Firefox `.zip` packages attached.
+If you find a bug, have an idea for an improvement, or want to contribute code:
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`).
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
 
 ---
 
