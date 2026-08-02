@@ -11,7 +11,7 @@ export default defineConfig({
     host_permissions: ['*://*.netflix.com/*'],
     web_accessible_resources: [
       {
-        resources: ['icon/16.png', 'icon/48.png', 'icon/128.png'],
+        resources: ['icon/16.png', 'icon/32.png', 'icon/48.png', 'icon/128.png'],
         matches: ['*://*.netflix.com/*'],
       },
     ],
