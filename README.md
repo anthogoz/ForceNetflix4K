@@ -1,8 +1,8 @@
 # 🎬 ForceNetflix4K
 
-[![WXT Framework](https://img.shields.io/badge/Framework-WXT-6366f1.style=flat-square)](https://wxt.dev)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg?style=flat-square)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![WXT Framework](https://img.shields.io/badge/Framework-WXT-6366f1?style=flat-square)](https://wxt.dev)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)](https://developer.chrome.com/docs/extensions/mv3/intro/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 **ForceNetflix4K** is an open-source browser extension for Chromium and Firefox that spoofs browser resolution, User-Agent, and media capability reporting to unlock 4K Ultra HD streaming profiles on Netflix.
 
