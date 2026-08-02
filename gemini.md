@@ -33,6 +33,17 @@ To stream Netflix in 4K Ultra HD, your environment must satisfy **all** of the f
 
 ---
 
+## 🌐 Browser Compatibility
+
+| Browser | Status | Notes |
+| :--- | :---: | :--- |
+| **Google Chrome** | ✅ **Supported** | Working on Windows 10/11 with HEVC hardware decoding. |
+| **Microsoft Edge** | ✅ **Supported** | Native PlayReady DRM support. |
+| **Brave** | ❌ **NOT Supported** | Brave's built-in Shields and anti-fingerprinting protections interfere with spoofing and block Netflix 4K PlayReady profile negotiation. |
+| **Firefox** | ⚠️ **Unsupported / Limited** | Firefox lacks OS-level PlayReady hardware DRM integration required by Netflix for 4K streams. |
+
+---
+
 ## ⚡ What ForceNetflix4K Bypasses
 
 When visiting `netflix.com`, the extension injects scripts into the main document context at `document_start` to perform the following:
